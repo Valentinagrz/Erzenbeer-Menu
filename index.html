@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menù Erzenbeer</title>
+  <style>
+    body {
+      background-color: #ffe600;
+      color: #000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 15px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #ffe600;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      z-index: 1000;
+      border-bottom: 2px solid #000;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-top: 30px;
+      border-top: 3px solid #000;
+      padding-top: 20px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 1.1em;
+      margin: 10px 0 2px 0;
+    }
+
+    .allergeni {
+      font-size: 0.8em;
+      font-style: italic;
+      color: #333;
+      margin: 2px 0 10px 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .item span:last-child {
+        align-self: flex-end;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>ERZENBEER</header>
+
+<h2>PIADINE <span style="font-size: 0.6em;">(impasto disponibile: 🌾 Gluten Free / 🌱 Vegan)</span></h2>
+<div class="item"><span>Salsiccia - Crudo - Cotto - Fontina</span><span>7,00€</span></div>
+<div class="allergeni">Glutine, Latte, Lattosio, Solfiti, Possibile traccia di Uova</div>
+
+<div class="item"><span>Verdure Grigliate</span><span>6,00€</span></div>
+<div class="allergeni">Con piadina classica: Glutine<br>Con piadina gluten free o vegan: Nessun allergene</div>
+
+<div class="item"><span>Nutella</span><span>5,00€</span></div>
+<div class="allergeni">Glutine, Latte, Frutta a guscio (nocciole), Soia</div>
+
+<h2>SFIZIOSITÀ</h2>
+<div class="item"><span>Patate Fritte</span><span>4,00€</span></div>
+<div class="allergeni">Possibile contaminazione da Glutine</div>
+
+<div class="item"><span>Olive Ascolane</span><span>5,00€</span></div>
+<div class="allergeni">Glutine, Latte, Uova, Carne, Solfiti</div>
+
+<div class="item"><span>Anelli di Cipolla</span><span>5,00€</span></div>
+<div class="allergeni">Glutine, Latte, Uova</div>
+
+<div class="item"><span>Crema Fritta</span><span>5,00€</span></div>
+<div class="allergeni">Glutine, Latte, Uova</div>
+
+<div class="item"><span>Prosciutto e Melone</span><span>4,00€</span></div>
+<div class="allergeni">Solfiti</div>
+
+<div class="item"><span>Polpette Vegetali 🌱</span><span>6,00€</span></div>
+<div class="allergeni">Possibili: Glutine, Soia, Sedano, Frutta a guscio</div>
+
+<h2>CONI</h2>
+<div class="item"><span>Cono Griglia (Salsiccia, Coppa e Verdure)</span><span>8,00€</span></div>
+<div class="allergeni">Solfiti, Possibile traccia di Latte e Glutine</div>
+
+<div class="item"><span>Cono Fritto (Patate Fritte, Olive Ascolane, Anelli di Cipolla, Crema Fritta)</span><span>7,00€</span></div>
+<div class="allergeni">Glutine, Latte, Uova, Solfiti</div>
+
+<h2>FRUTTA E DOLCI</h2>
+<div class="item"><span>Melone</span><span>3,00€</span></div>
+<div class="allergeni">Nessun allergene</div>
+
+<div class="item"><span>Gelato</span><span>2,00€</span></div>
+<div class="allergeni">Latte, Uova, Soia, Glutine, Frutta a guscio (possibile)</div>
+
+<div class="item"><span>Ghiaccioli</span><span>1,00€</span></div>
+<div class="allergeni">Possibili Coloranti, Solfiti</div>
+
+</body>
+</html>
