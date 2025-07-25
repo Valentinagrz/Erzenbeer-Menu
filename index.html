@@ -1,5 +1,90 @@
 <!DOCTYPE html>
 <html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menù Erzenbeer</title>
+  <style>
+    body {
+      background-color: #ffe600;
+      color: #000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 15px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #ffe600;
+      padding: 10px 20px;
+      text-align: center;
+      z-index: 1000;
+      border-bottom: 2px solid #000;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .header-content img.logo {
+      height: 40px;
+    }
+
+    .header-content .titolo {
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-top: 30px;
+      border-top: 3px solid #000;
+      padding-top: 20px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 1.1em;
+      margin: 10px 0 2px 0;
+    }
+
+    .allergeni {
+      font-size: 0.8em;
+      font-style: italic;
+      color: #333;
+      margin: 2px 0 10px 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .item span:last-child {
+        align-self: flex-end;
+        font-weight: bold;
+      }
+
+      .header-content {
+        flex-direction: column;
+      }
+
+      .header-content img.logo {
+        height: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
 <header>
   <div class="header-content">
     <img src="logo.png" alt="Logo sinistro" class="logo">
@@ -8,82 +93,7 @@
   </div>
 </header>
 
-<style>
-  body {
-    background-color: #ffe600;
-    color: #000;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 15px;
-  }
-
-  header {
-    position: sticky;
-    top: 0;
-    background-color: #ffe600;
-    padding: 20px;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    z-index: 1000;
-    border-bottom: 2px solid #000;
-  }
-
-  .header-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .logo {
-    height: 40px;
-    width: auto;
-  }
-
-  .titolo {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-
-  h2 {
-    font-size: 1.5em;
-    margin-top: 30px;
-    border-top: 3px solid #000;
-    padding-top: 20px;
-  }
-
-  .item {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 1.1em;
-    margin: 10px 0 2px 0;
-  }
-
-  .allergeni {
-    font-size: 0.8em;
-    font-style: italic;
-    color: #333;
-    margin: 2px 0 10px 10px;
-  }
-
-  @media screen and (max-width: 600px) {
-    .item {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .item span:last-child {
-      align-self: flex-end;
-      font-weight: bold;
-    }
-  }
-</style>
-</head>
-<body>
-
-<header>ERZENBEER</header>
+<!-- INIZIO MENÙ -->
 
 <h2>PIADINE <span style="font-size: 0.6em;">(impasto disponibile: 🌾 Gluten Free / 🌱 Vegan)</span></h2>
 <div class="item"><span>Salsiccia - Crudo - Cotto - Fontina</span><span>7,00€</span></div>
@@ -133,20 +143,14 @@
 
 <h2>BIRRE</h2>
 <div class="item"><span>Bionda Paulaner</span><span>5,00€</span></div>
-
 <div class="item"><span>Hacker non filtrata</span><span>5,00€</span></div>
-
 <div class="item"><span>Moretti IPA</span><span>6,00€</span></div>
 
 <h2>BEVANDE</h2>
 <div class="item"><span>Acqua</span><span>1,50€</span></div>
-
 <div class="item"><span>Coca Cola</span><span>3,50€</span></div>
-
-<div class="item"><span>The limone/pesca</span><span>3,50€</span></div>
-
+<div class="item"><span>Thé limone/pesca</span><span>3,50€</span></div>
 <div class="item"><span>Fanta</span><span>3,50€</span></div>
-
 <div class="item"><span>Caffè</span><span>1,00€</span></div>
 
 </body>
