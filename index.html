@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menù Erzenbeer</title>
-  <style>
-    body {
-      background-color: #ffe600;
-      color: #000;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 15px;
-    }
+<header>
+  <div class="header-content">
+    <img src="logo.png" alt="Logo sinistro" class="logo">
+    <span class="titolo">ERZENBEER</span>
+    <img src="logo.png" alt="Logo destro" class="logo">
+  </div>
+</header>
 
-    header {
-      position: sticky;
-      top: 0;
-      background-color: #ffe600;
-      padding: 20px;
-      text-align: center;
-      font-size: 2em;
-      font-weight: bold;
-      z-index: 1000;
-      border-bottom: 2px solid #000;
-    }
+<style>
+  body {
+    background-color: #ffe600;
+    color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+  }
 
-    h2 {
-      font-size: 1.5em;
-      margin-top: 30px;
-      border-top: 3px solid #000;
-      padding-top: 20px;
-    }
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #ffe600;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 1000;
+    border-bottom: 2px solid #000;
+  }
 
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+
+  .titolo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    border-top: 3px solid #000;
+    padding-top: 20px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+    margin: 10px 0 2px 0;
+  }
+
+  .allergeni {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #333;
+    margin: 2px 0 10px 10px;
+  }
+
+  @media screen and (max-width: 600px) {
     .item {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      font-size: 1.1em;
-      margin: 10px 0 2px 0;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    .allergeni {
-      font-size: 0.8em;
-      font-style: italic;
-      color: #333;
-      margin: 2px 0 10px 10px;
+    .item span:last-child {
+      align-self: flex-end;
+      font-weight: bold;
     }
-
-    @media screen and (max-width: 600px) {
-      .item {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .item span:last-child {
-        align-self: flex-end;
-        font-weight: bold;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
