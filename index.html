@@ -24,25 +24,25 @@
 
     .header-content {
       position: relative;
-      height: 70px; /* altezza header */
-    }
-
-    .header-content img.logo {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
       height: 70px;
     }
 
+    .header-content img.logo {
+      height: 70px;
+      flex-shrink: 0;
+    }
+
     .header-content .titolo {
-      width: 100%;
-      text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       font-size: 2.2em;
       font-weight: bold;
       letter-spacing: 2px;
-      line-height: 70px; /* centra verticalmente */
       margin: 0;
+      white-space: nowrap;
     }
 
     h2 {
@@ -70,7 +70,6 @@
     @media screen and (max-width: 600px) {
       .header-content img.logo {
         height: 60px;
-        left: 10px;
       }
 
       .header-content {
@@ -78,7 +77,6 @@
       }
 
       .header-content .titolo {
-        line-height: 60px;
         font-size: 1.8em;
       }
 
@@ -98,7 +96,7 @@
 
 <header>
   <div class="header-content">
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="logo.png" alt="Logo" class="logo" />
     <span class="titolo">ERZENBEER</span>
   </div>
 </header>
